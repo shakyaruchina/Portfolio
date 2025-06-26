@@ -4,66 +4,128 @@
 	<meta charset="utf-8">
 	<title>Ruchina Shakya</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-	<div id="particles-js">
-		<div class="main-header">
-			<h1 class="name">Ruchina Shakya</h1>
-			<h2>Entry Level Programmer</h2>
-			<div class="media">
-				
-					<a aria-label="Linkedin" href="https://www.linkedin.com/in/ruchina-shakya-04a9b183/"><i class="fa fa-linkedin  fa-2x" aria-hidden="true"></i></a>
-					<a aria-label="Github" href="https://github.com/shakyaruchina"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-					<a aria-label="Email" href="mailto:ruchinas@gmail.com"><i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i></a>
-				
-				
-			</div>
-
-
+	<!-- Navigation -->
+	<div class="navbar">
+		<!-- Left side: Navigation Links -->
+		<div class="nav-left">
+			<a href="#home">Home</a>
+			<a href="#about">About Me</a>
+			<a href="#projects">Projects</a>
 		</div>
-
 		
+		<!-- Right side: Social Icons -->
+		<div class="nav-right media">
+			<a class = "social-icon" aria-label="Linkedin" href="https://www.linkedin.com/in/shakyaruchina" target="_blank">
+				<i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+			</a>
+			<a class = "social-icon" aria-label="Github" href="https://github.com/shakyaruchina" target="_blank">
+				<i class="fab fa-github fa-2x" aria-hidden="true"></i>
+			</a>
+			<a class = "social-icon" aria-label="Email" href="mailto:ruchinas@gmail.com">
+				<i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+			</a>
+		</div>
 	</div>
 
+	<!-- Section: Home-->
+	<section id = "home">
+		<div id="particles-js"></div>
+		<div class="main-header">
+			<h2 id="typewriter"></h2>
+			<script>
+					const text = "Hey, I'm Ruchina.";
+					  const speed = 50;
+					  let i = 0;
+					  function typeWriter() {
+						if (i < text.length) {
+							  document.getElementById("typewriter").innerHTML += text.charAt(i);
+							  i++;
+							  setTimeout(typeWriter, speed);
+							}
+						  }
+	
+					  typeWriter();
+			</script>
+		</div>
+	</section>
 
-	<section class="about-me">
+	
+	<!-- Section: About-->
+	<section id="about" class="about-me">
 		<div class="container">
-
-			
-				<div class="left-side">
-					<h1>About Me</h1>
-					<div class="name">
-						<h2>Ruchina Shakya</h2>
-					</div>
-
-
+		  <div class="about-card">
+			<div class="left-side">
+			  <h1 class="section-title">About Me</h1>
+			  <h2 class="my-name">I'm <span>Ruchina Shakya</span></h2>
+			  <p class="intro-text">
+				I’m passionate about exploring data-driven problems through research, analysis, and creative thinking. I focus on natural language processing and machine learning, working with large datasets to uncover insights and visualize results in a way that tells a clear, compelling story. My goal is to make complex models and data more accessible, meaningful, and impactful.
 				
-				<span></span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.<br/> Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				
+			  </p>
+			  <blockquote class="quote">“Code is poetry – and I love to write.”</blockquote>
 			</div>
 			<div class="right-side">
-					<img src="img/me.jpg">
-				</div>
+			  <img src="img/mepepe.png" alt="Ruchina Shakya">
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+
+	<!-- Section: Projects-->  
+	<section id= "projects" class="my-work">
+		<div class="container">
+			<h2>My Projects</h2>
+			<h3><p>I love to create things</p></h3>
+			<div class="highlighted-project">
+			  <div class="project-card large">
+				<img src="img/tfidf.png" alt="Flapitalism" />
+				<h3>Machine Learning</h3>
+				<p>Test simple machine learning models</p>
+			  </div>
+			</div>
+
+			<div class = "other-projects">
+				<div class="projects-grid">
+					<div class="project-card">
+					  <img src="img/llama.png" alt="Llama" />
+					  <h3>Large Language Models (LLM)</h3>
+					  <p>Try different open source LLMs.</p>
+					</div>
+					<div class="project-card">
+					  <img src="img/travel.png" alt="Pendulum City" />
+					  <h3>Travel with me</h3>
+					  <p>Explore the cities</p>
+					</div>
+					<div class="project-card">
+					  <img src="img/banchan.png" alt="food" />
+					  <h3>Food</h3>
+					  <p>Food images</p>
+					</div>
+					<div class="project-card">
+					  <img src="img/aayannini.jpg" alt="Aayan" />
+					  <h3>Game with my nephew</h3>
+					  <p>Youtube</p>
+					</div>
+					<div class="project-card">
+					  <img src="img/pepe.png" alt="pepe" />
+					  <h3>Extra</h3>
+					  <p>Extra</p>
+					</div>
+				  </div>
+			</div>
 			
 		</div>
 		
-	</section>
-	<section class="my-work">
-		<div class="container">
-		My Work
-		</div>
+			
+		  
+		  
 	</section>
 
 	<footer id="main-footer">
-		<p>Copyright &copy; 2020 Ruchina Shakya</p>
+		<p>Copyright &copy; 2025 Ruchina Shakya</p>
 	</footer>
 
 
